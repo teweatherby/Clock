@@ -66,3 +66,11 @@ This function takes in an integer value and subtracts it from the clocks hours. 
 * public void subMinute(int m)
 
 This function takes in an integer value and subtracts it from the clocks minutes. This function considers the possibility someone would want to subtract negative minutes.
+
+* public void addTime(int h, int m)
+
+This function takes in two integer values for the hour and minute respectively. It will then add the values to the hour and minute values of the clock. This function considers the possibility of adding negative integers.
+
+* public void subTime(int h, int m)
+
+This function takes in two integer values for the hour and minute respectively. It will then subtract the values from the hour and minute values of the clock. This function considers the possibility of subtracting negative integers.
