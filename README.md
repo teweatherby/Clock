@@ -33,11 +33,16 @@ Anything out of bounds will set the hour to 12:MM PM.
 This function will set the minute to the specified integer (0-59).
 Anything out of bounds will be set to HH:00 (AM/PM)
 
-* public void setPM(int h)
+* public void setPM(boolean AMPM)
 
-This function takes in the current hour of the object and decides if it’s PM.
-If h for hours is 12 through 23, it is considered PM.
+This function will set the clock to AM or PM based on input.
+False = AM, True = PM
 
+The difference between this function and setPM is this: changePM is meant to operate internally with the arithmetic to determine whether it is AM or PM.
+
+setPM is meant to give the user an option to set the clock to AM or PM without affecting the current time.
+
+## Getters
 * public String getRegTime()
 
 This function converts the variables into a readable 12 hour clock.
@@ -74,3 +79,12 @@ This function takes in two integer values for the hour and minute respectively. 
 * public void subTime(int h, int m)
 
 This function takes in two integer values for the hour and minute respectively. It will then subtract the values from the hour and minute values of the clock. This function considers the possibility of subtracting negative integers.
+
+* private void changePM(int h)
+
+This function takes in the current hour of the object and decides if it’s PM.
+If h for hours is 12 through 23, it is considered PM.
+
+The difference between this function and setPM is this: changePM is meant to operate internally with the arithmetic to determine whether it is AM or PM.
+
+setPM is meant to give the user an option to set the clock to AM or PM without affecting the current time.
