@@ -12,37 +12,12 @@ import java.util.*;
 
 
 public class Clock
-{ 
-     public static void main(String[] args)
-    {
-    Clock c1 = new Clock(6, 40);
-    //Clock c2 = new Clock(11, 59);
-    //Clock c3 = new Clock(12, 0);
-    //Clock c4 = new Clock(23, 59);
-    //Clock c5 = new Clock(8, 38);
-    
-    //System.out.println(c1.getRegTime());
-    //System.out.println(c2.getRegTime());
-    //System.out.println(c3.getRegTime());
-    //System.out.println(c4.getRegTime());
-    //System.out.println(c5.getRegTime());
-
-    /* This section is test for the addition and subtraction. */
-    System.out.println(c1.getRegTime());    
-    int counter = 0;  
-    while(counter != 100)
-    {
-        c1.addTime(1, 1);
-        System.out.println(c1.getRegTime());
-        counter += 1;
-    }}
+{
     // Member variables
     private int hour; // Tracks the current hour in milTime
     private int minute; // Tracks the current Minute
     private boolean isPM; // Tracks whether it is AM/PM
-    
-    
-    
+     
     // Constructors, must set in Military Time
     public Clock()
     {
